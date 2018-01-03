@@ -7,7 +7,7 @@
       "methods": [
         "get"
       ],
-      "route": "{APIName}/{user}/{pass}/{sub}/{rgroup}/{VM}",
+      "route": "{APIName}/{user}/{pass}/{sub}/{rgroup}/{VM}/{ACTION}",
       "authLevel": "function"
     },
     {
