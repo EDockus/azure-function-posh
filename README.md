@@ -5,6 +5,6 @@ Replace {APIName} in function.json with the name of your function:
 
 "route": "{APIName}/{user}/{pass}/{sub}/{rgroup}/{VM}",
 
-#Usage
+# Usage
 
 You can generate the URL from Azure Function page and then simply replace parameters in the URL with the actual values.
