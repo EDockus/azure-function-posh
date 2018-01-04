@@ -38,7 +38,7 @@ if (($state -like "VM deallocated") -and $action -like "Start")
 {    
     try
     {
-        Get-AzureRmVM -Name WinPizza -ResourceGroupName ULTRATECH -ErrorAction Stop | Start-AzureRMVM -ErrorAction Stop
+        Get-AzureRmVM -Name $virtualMachine -ResourceGroupName $resourceGroup -ErrorAction Stop | Start-AzureRMVM -ErrorAction Stop
         Out-File -Encoding Ascii -FilePath $res -inputObject "$virtualMachine has been turned on"
     }
     catch
