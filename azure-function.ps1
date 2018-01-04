@@ -50,7 +50,7 @@ elseif (($state -like "VM running") -and $action -like "Stop")
 {
     try
     {
-        Get-AzureRmVM -Name WinPizza -ResourceGroupName ULTRATECH -ErrorAction Stop | Stop-AzureRMVM -ErrorAction Stop
+        Get-AzureRmVM -Name $virtualMachine -ResourceGroupName $resourceGroup -ErrorAction Stop | Stop-AzureRMVM -ErrorAction Stop
         Out-File -Encoding Ascii -FilePath $res -inputObject "$virtualMachine has been turned off"
     }
     catch
